@@ -19,6 +19,8 @@ root = Tk()
 root.title("AppMDP")
 root.geometry("500x300")
 root.config(background="#3D85C6")
+root.minsize(500,300)
+
 
 #frame
 frame=Frame(root,bg="#3D85C6")
@@ -26,7 +28,7 @@ frameDroite= Frame(frame,bg="#3D85C6")
 
 #image
 
-image= PhotoImage(file="imageCadenas.png").zoom(105).subsample(32)
+image= PhotoImage(file="Cadenas.png").zoom(20).subsample(30)
 canvas = Canvas(frame,width=100,height=100,bg="#3D85C6",bd=0,highlightthickness=0)
 canvas.create_image(50,50,image=image)
 canvas.grid(row=0,column=0,sticky=W)
